@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOMEWORK</title>
+    <link rel="stylesheet" href="./css.css">
+</head>
+<body>
+    <h1>Task1</h1>
+    <legend>Here is the links related to margin collapse:</legend>
+    <a href="https://css-tricks.com/what-you-should-know-about-collapsing-margins/">CSS-Tricks</a>
+    <br>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_box_model/Mastering_margin_collapsing">MDN</a>
+
+    <h1>Task 2</h1>
+    <h2>What is margin collapse:</h2>
+    <p>
+        Margin collapse occurs when two elements with adjacent margins are placed next to each other. In this case, if the margins be equal, insted of adding the values of both margins together, just one value apply. <br> 
+       and if they weren't equal, the larger of the two margins is used as the spacing between the elements, rather than adding the values of both margins together. Margin collapse means that the distance between two elements with adjacent margins is equal to the larger margin of the two, instead of the sum of both margins. Generally, margins that are in the same direction and on the same line can be added together, but if two elements with adjacent margins are placed in different directions, their margins do not add up and the larger margin is used as the spacing between them. Margin collapse can cause problems in web page design, so it should be used carefully and alternative methods such as using padding instead of margin should be considered.
+    </p>
+
+    <h1>Task 3</h1>
+    <h3>An example of this bug:</h3>
+        <p class="p1">
+            this paragraph has 50px top and bottom margin
+        </p>
+
+        <p class="p2">
+            this paragraph has 50px top and bottom margin too
+        </p>
+
+     <h4>An other example:</h4>  
+     <p class="p3">
+        Lorem ipsum dolor sit amet.
+        with 50px bottom margin.
+     </p> 
+
+     <p class="p4">
+        Lorem ipsum dolor sit amet.
+        with 100px top margin.
+     </p>
+</body>
+</html>
